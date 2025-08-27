@@ -25,6 +25,7 @@ function generateMetaphor(stage) {
   }.`;
 }
 
+// my countdown 
 function showCountdown(seconds) {
   const countdownEl = document.getElementById("countdownDisplay");
   let current = seconds;
@@ -35,7 +36,7 @@ function showCountdown(seconds) {
 
     if (current < 0) {
       clearInterval(interval);
-      countdownEl.textContent = ""; // Clear after countdown
+      countdownEl.textContent = ""; 
     }
   }, 1000);
 }
@@ -86,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       // Final reveal
       finalReveal.style.display = "block";
-      button.style.display = "none"; // Optional: hide button after emergence
+      button.style.display = "none";
     }
   });
 });
